@@ -19,8 +19,8 @@ services:
   - sqlite
   #- rethinkdb
   #- couchdb
-  - neo4j
-  - cassandra
+  #- neo4j
+  #- cassandra
   
 build:
   pre_ci_boot:
