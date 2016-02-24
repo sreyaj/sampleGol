@@ -15,7 +15,7 @@ services:
   #- redis
  # - memcache
   #- selenium
-  - rabbitmq
+ # - rabbitmq
   - sqlite 
   #- rethinkdb
   #- couchdb
