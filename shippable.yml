@@ -8,11 +8,11 @@ go:
   - 1.2
   - 1.3
 services:
-  - rabbitmq
-  - rethinkdb
-  - couchdb
-  - neo4j
-  #- cassandra
+  - cassandra
+  #- rabbitmq
+  #- rethinkdb
+  #- couchdb
+  #- neo4j
   #- mysql
   #- postgres
   #- mongodb
