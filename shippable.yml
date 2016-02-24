@@ -19,7 +19,7 @@ services:
   #- elasticsearch
   #- redis
  # - memcache
-  #- selenium
+  #- selenium 
 #  - sqlite
 
 
