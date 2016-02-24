@@ -13,14 +13,14 @@ services:
   #- mongodb
   #- elasticsearch
   #- redis
-  - memcache
+ # - memcache
   - selenium
-  - rabbitmq
-  - sqlite
-  - rethinkdb
-  - couchdb
-  - neo4j
-  - cassandra
+ # - rabbitmq
+#  - sqlite
+ # - rethinkdb
+  #- couchdb
+  #- neo4j
+  #- cassandra
 
 
 build:
