@@ -15,7 +15,6 @@ services:
   - redis
   - memcache
   - rabbitmq
-  - sqlite
   - rethinkdb 
   - couchdb
   - neo4j
