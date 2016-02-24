@@ -14,10 +14,9 @@ services:
   - elasticsearch
   - redis
   - memcache
+  #- selenium
   - rabbitmq
-  - rethinkdb
-  - couchdb
-  - neo4j
+  
 
 build:
   pre_ci_boot:
