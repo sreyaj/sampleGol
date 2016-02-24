@@ -20,7 +20,7 @@ services:
   - rethinkdb 
   - couchdb
   - neo4j
-  - cassandra
+  #- cassandra
 
 build:
   pre_ci_boot:
