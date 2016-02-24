@@ -16,9 +16,9 @@ services:
  # - memcache
   #- selenium
  # - rabbitmq
-  - sqlite 
-  #- rethinkdb
-  #- couchdb
+ # - sqlite 
+  - rethinkdb
+  - couchdb
   #- neo4j
   #- cassandra
 
