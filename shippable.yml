@@ -19,9 +19,8 @@ services:
   - elasticsearch
   - redis
   - memcache
- # - selenium 
+  #- selenium
  
-
 
 build:
   pre_ci_boot:
