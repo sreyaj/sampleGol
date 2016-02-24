@@ -10,9 +10,9 @@ go:
 services:
   - mysql
   #- redis
-  - memcached
-  - rethinkdb
-  - couchdb
+ # - memcached
+  #- rethinkdb
+  #- couchdb
 
 build:
   pre_ci_boot:
