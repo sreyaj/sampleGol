@@ -14,7 +14,7 @@ services:
   #- couchdb
   #- neo4j
   #- mysql
-  #- postgres
+  #- postgres 
   #- mongodb
   #- elasticsearch
   #- redis
