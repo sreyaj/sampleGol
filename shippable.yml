@@ -18,8 +18,8 @@ services:
  # - rabbitmq
  # - sqlite 
   #- rethinkdb
-  - couchdb
-  #- neo4j
+  #- couchdb
+  - neo4j
   #- cassandra
 
 build:
