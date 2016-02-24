@@ -17,8 +17,8 @@ services:
   #- selenium
   - rabbimq
   - sqlite
-  - rethinkdb
-  - couchdb
+  #- rethinkdb
+  #- couchdb
   - neo4j
   - cassandra
   
