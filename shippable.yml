@@ -14,12 +14,12 @@ services:
   #- elasticsearch
   #- redis
  # - memcache
-  #- selenium
+  - selenium
  # - rabbitmq
  # - sqlite 
   #- rethinkdb
   #- couchdb
-  - neo4j
+  #- neo4j
   #- cassandra
 
 build:
