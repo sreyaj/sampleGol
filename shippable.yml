@@ -9,7 +9,7 @@ go:
   - 1.3
 services:
   - mysql
-  - redis
+  #- redis
   - memcached
   - rethinkdb
   - couchdb
