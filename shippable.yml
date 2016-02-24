@@ -12,7 +12,7 @@ services:
   - rethinkdb
   - couchdb
   - neo4j
-  - cassandra
+  #- cassandra
   #- mysql
   #- postgres
   #- mongodb
