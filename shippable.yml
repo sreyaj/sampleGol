@@ -1,5 +1,3 @@
-
-
 # Language setting
 language: go
 
@@ -10,19 +8,22 @@ go:
   - 1.3
   
 services:
+  - rabbitmq
+  - rethinkdb
+  - couchdb
+  - neo4j
   - mysql
-  - postgres
+  - postgres 
   - mongodb
   - elasticsearch
   - redis
   - memcache
-  - rabbitmq
-  
+
 build:
   pre_ci_boot:
-    image_name: drydock/u12golpls
+    image_name: drydock/u12golall
     image_tag: prod
     pull: true
-    
+
   ci:
-    - go version
+    - go version 
