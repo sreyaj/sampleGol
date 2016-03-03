@@ -12,7 +12,7 @@ go:
 services:
   - mysql
   - postgres
-  - mongodb
+  - mongodb  
   - elasticsearch
   - redis
   - memcache
