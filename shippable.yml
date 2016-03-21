@@ -14,5 +14,5 @@ matrix:
   include:
     - go: 1.1
 build:
-  ci:
+  ci:   
     - go version     
