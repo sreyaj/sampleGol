@@ -1,13 +1,19 @@
-
 # Language setting
 language: go
-
+​
 # Version number
 go:
-  - 1.1
+  #- 1.1
   - 1.2
   - 1.3
-
+matrix:
+  exclude:
+    - go: 1.2
+    - go: 1.3
+    - go: 1.1
+    
+  include:
+    - go: 1.1
 build:
-  ci:
+  ci:   
     - go version
