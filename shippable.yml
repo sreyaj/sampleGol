@@ -1,6 +1,6 @@
 # Language setting
 language: go
-​
+
 # Version number
 go:
   #- 1.1
