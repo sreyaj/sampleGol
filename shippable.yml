@@ -17,6 +17,13 @@ services:
   - redis
   - memcache
   - rabbitmq
+matrix:
+  include:
+    - gol: 1.1
+  exclude: 
+    - gol: 1.2
+  allow_failure:
+    - gol: 1.3
   
 build:
   pre_ci_boot:
