@@ -69,5 +69,5 @@ integrations:
         - "chat.freenode.net#test1-irc"
       on_start: always
       on_success: always      
-      on_failure: always     
+      on_failure: always          
     
