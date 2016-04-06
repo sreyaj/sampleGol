@@ -7,6 +7,7 @@ go:
   - 1.1
   #- 1.2
   #- 1.3
+timeout:5
 
 build:
   pre_ci_boot:
@@ -16,3 +17,4 @@ build:
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
   ci:
     - go version
+    - sleep 90
