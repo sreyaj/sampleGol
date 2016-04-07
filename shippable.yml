@@ -9,8 +9,7 @@ go:
 
 build:
   pre_ci_boot:
-   # image_name: drydock/u12gol
-    image_name: shippableimages/ubuntu1204_go
+    image_name: drydock/u12gol
     image_tag: latest
     pull: true
     
