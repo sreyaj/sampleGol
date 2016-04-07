@@ -10,7 +10,7 @@ go:
 build:
   pre_ci_boot:
    # image_name: drydock/u12gol
-    image_name: shippable/minv2
+    image_name: shippableimages/ubuntu1204_nodejs
     image_tag: latest
     pull: true
     
