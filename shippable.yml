@@ -15,12 +15,7 @@ matrix:
 build:
   ci:      
     - go version   
-    - IS_GIT_TAG
-    - GIT_TAG_NAME
-    - IS_RELEASE
-    - IS_PRERELEASE
-    - RELEASE_NAME
-    - RELEASED_AT
+
 
      
       
