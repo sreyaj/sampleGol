@@ -9,9 +9,6 @@ go:
 
 
 build:
-   
-  
-
   pre_ci_boot:
     image_name: shippabledocker/shiphitchcock2_sample_node2
     image_tag: latest
