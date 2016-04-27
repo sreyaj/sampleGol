@@ -9,8 +9,11 @@ go:
 
 
 build:
+  pre_ci:
+    - docker build -t=shippabledocker/shiphitchcock2_sample_golnew .
+    
   pre_ci_boot:
-    image_name: shippabledocker/shiphitchcock2_sample_node2
+    image_name: shippabledocker/shiphitchcock2_sample_golnew
     image_tag: latest
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
@@ -24,8 +27,8 @@ build:
     #- docker push shippabledocker/shiphitchcock4samplenod
    # - docker build -t=quay.io/shippablequay/hitchcock2_sample_nodequay .
     #- docker push quay.io/shippablequay/hitchcock2_sample_nodequay
-    - docker build -t=shippabledocker/shiphitchcock4samplenodsreya:$BRANCH.$BUILD_NUMBER .
-    - docker push shippabledocker/shiphitchcock4samplenodsreya:$BRANCH.$BUILD_NUMBER
+    - docker build -t=shippabledocker/shiphitchcock4samplegolsreya:$BRANCH.$BUILD_NUMBER .
+    - docker push shippabledocker/shiphitchcock4samplegolsreya:$BRANCH.$BUILD_NUMBER
 
 integrations:
   hub:
