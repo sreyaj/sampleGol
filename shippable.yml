@@ -13,8 +13,8 @@ build:
     - docker build -t=shippabledocker/shiphitchcock2_sample_golnew .
     
   pre_ci_boot:
-    image_name: shippabledocker/shiphitchcock2_sample_golnew
-    image_tag: latest
+    image_name: drydock/u12gol
+    image_tag: prod
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
     
