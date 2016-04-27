@@ -10,7 +10,7 @@ go:
 
 build:
   pre_ci:
-    - docker build -t=shippabledocker/shiphitchcock2_sample_golnew .
+    - docker build -t=sreyaj/shiphitchcock2_sample_golnew .
     
   pre_ci_boot:
     image_name: drydock/u12gol
@@ -27,12 +27,12 @@ build:
     #- docker push shippabledocker/shiphitchcock4samplenod
    # - docker build -t=quay.io/shippablequay/hitchcock2_sample_nodequay .
     #- docker push quay.io/shippablequay/hitchcock2_sample_nodequay
-    - docker build -t=shippabledocker/shiphitchcock4samplegolsreya:$BRANCH.$BUILD_NUMBER .
-    - docker push shippabledocker/shiphitchcock4samplegolsreya:$BRANCH.$BUILD_NUMBER
+    - docker build -t=sreyaj/shiphitchcock4samplegolsreya:$BRANCH.$BUILD_NUMBER .
+    - docker push sreyaj/shiphitchcock4samplegolsreya:$BRANCH.$BUILD_NUMBER
 
 integrations:
   hub:
-    - integrationName: ship-docker
+    - integrationName: sreyadocker
       type: docker   
     #-integrationName: ship-quay
      #type: quay.io  
