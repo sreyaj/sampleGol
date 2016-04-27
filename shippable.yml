@@ -6,16 +6,36 @@ go:
   #- 1.1
   - 1.2
   - 1.3
-matrix:
-  include:
-    - go: 1.1
-  exclude:
-    - go: 1.2
+
 
 build:
+   
+  
+
+  pre_ci_boot:
+    image_name: shippabledocker/shiphitchcock2_sample_node2
+    image_tag: latest
+    pull: true
+    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
+    
+    
   ci:   
-    - go version    
-    - sleep 10m
+    - go version   
+
+  post_ci:
+   # - docker build -t=shippabledocker/shiphitchcock4samplenod .
+    #- docker push shippabledocker/shiphitchcock4samplenod
+   # - docker build -t=quay.io/shippablequay/hitchcock2_sample_nodequay .
+    #- docker push quay.io/shippablequay/hitchcock2_sample_nodequay
+    - docker build -t=shippabledocker/shiphitchcock4samplenodsreya:$BRANCH.$BUILD_NUMBER .
+    - docker push shippabledocker/shiphitchcock4samplenodsreya:$BRANCH.$BUILD_NUMBER
+
+integrations:
+  hub:
+    - integrationName: ship-docker
+      type: docker   
+    #-integrationName: ship-quay
+     #type: quay.io 
    
   
      
