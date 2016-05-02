@@ -10,7 +10,7 @@ matrix:
   include:
     - go: 1.1
 #  exclude:
- #   - go: 1.2
+ #   - go: 1.2 
 
 build:
   ci:      
