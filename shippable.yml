@@ -58,5 +58,5 @@ integrations:
         - CONTAINER_NAME=$SHIPPABLE_CONTAINER_NAME
         - FOO=bar
         - FIZZ=buzz    
- 
+  
  
