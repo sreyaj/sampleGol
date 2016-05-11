@@ -14,6 +14,8 @@ go:
 build:
   ci:      
     - go version 
+    - jfjj
+    
 integrations:
   notifications:
     - integrationName: ship_slack
