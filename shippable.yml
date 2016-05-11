@@ -14,7 +14,6 @@ go:
 build:
   ci:      
     - go version 
-    - jfjj
     
 integrations:
   notifications:
@@ -23,15 +22,15 @@ integrations:
       recipients:
         - "#random" 
         - "#public-chnl" 
-      on_start: always
-      on_success: always
+    #  on_start: always
+      on_success: change
       on_failure: always
       
     - integrationName: "ship-slack1"
       type: slack
       on_failure: always
-      on_start: always
-      on_success: always
+     # on_start: always
+      on_success: change
       recipients:
         - "#general"
       
@@ -40,8 +39,8 @@ integrations:
       recipients: 
           - sreyaj10@gmail.com
           - sreya@shippable.com
-      on_start: always
-      on_success: always 
+      #on_start: always
+      on_success: change
       on_failure: always 
     
     - integrationName: irc   
@@ -59,8 +58,8 @@ integrations:
         - '#testing'
      # - '#Pillar%20of%20Autumn'
         - '@shiphitchcock4'
-      on_start: always
-      on_success: always
+     # on_start: always
+      on_success: change
       on_failure: always
       
     - integrationName: shiphitchcock4-webhook
