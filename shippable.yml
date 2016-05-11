@@ -49,7 +49,17 @@ integrations:
         - "chat.freenode.net#test1-irc"
       on_start: always
       on_success: always      
-      on_failure: always   
+      on_failure: always 
+      
+    - integrationName: ship-hipchat
+      type: hipchat
+      recipients:
+        - '#testing'
+     # - '#Pillar%20of%20Autumn'
+        - '@shiphitchcock4'
+      on_start: always
+      on_success: always
+      on_failure: always
       
     - integrationName: shiphitchcock4-webhook
       type: webhook
