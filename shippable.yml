@@ -14,8 +14,7 @@ go:
 build:
   ci:       
     - go version 
-    - hfkjkd
-  
+   
     
 integrations:
   notifications:
