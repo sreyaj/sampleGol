@@ -43,7 +43,7 @@ integrations:
           - sreya@shippable.com
       #on_start: always
       on_success: never
-      on_failure: always 
+      on_failure: change
     
     - integrationName: irc   
       type: irc
