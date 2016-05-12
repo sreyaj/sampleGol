@@ -12,7 +12,7 @@ go:
  #   - go: 1.2 
 
 build:
-  ci:      
+  ci:       
     - go version 
   
     
