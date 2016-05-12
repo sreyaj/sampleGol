@@ -41,7 +41,7 @@ integrations:
           - sreyaj10@gmail.com 
           - sreya@shippable.com
       #on_start: always
-      on_success: never
+      on_success: always
       on_failure: change
     
     - integrationName: irc   
