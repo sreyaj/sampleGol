@@ -25,11 +25,11 @@ integrations:
         - "#public-chnl" 
     #  on_start: always
       on_success: always
-      on_failure: change
+      on_failure: never
       
     - integrationName: "ship-slack1"
       type: slack
-      on_failure: change
+      on_failure: never
      # on_start: always
       on_success: always
       recipients:
@@ -42,7 +42,7 @@ integrations:
           - sreya@shippable.com
       #on_start: always
       on_success: always
-      on_failure: change
+      on_failure: never
     
     - integrationName: irc   
       type: irc
@@ -61,7 +61,7 @@ integrations:
         - '@shiphitchcock4'
      # on_start: always
       on_success: always
-      on_failure: change
+      on_failure: never
       
     - integrationName: shiphitchcock4-webhook
       type: webhook
