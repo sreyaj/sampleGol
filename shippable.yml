@@ -25,14 +25,14 @@ integrations:
         - "#random" 
         - "#public-chnl" 
     #  on_start: always
-      on_success: never
-      on_failure: always
+      on_success: always
+      on_failure: change
       
     - integrationName: "ship-slack1"
       type: slack
-      on_failure: always
+      on_failure: change
      # on_start: always
-      on_success: never
+      on_success: always
       recipients:
         - "#general"
       
@@ -61,8 +61,8 @@ integrations:
      # - '#Pillar%20of%20Autumn'
         - '@shiphitchcock4'
      # on_start: always
-      on_success: never
-      on_failure: always
+      on_success: always
+      on_failure: change
       
     - integrationName: shiphitchcock4-webhook
       type: webhook
