@@ -67,5 +67,5 @@ integrations:
       payload:
         - API_URL=$SHIPPABLE_API_URL
         - CONTAINER_NAME=$SHIPPABLE_CONTAINER_NAME
-        - FOO=bar
+        - FOO=bar   
         - FIZZ=buzz
